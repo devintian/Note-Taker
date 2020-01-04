@@ -1,0 +1,39 @@
+nav{
+    margin-top:40px;
+}
+
+.card{
+    width: 60%;
+}
+
+#notes{
+    width:50%;
+}
+
+#newNotes{
+    float:left;
+    width:50%;
+}
+
+#noteTitle{
+    margin-bottom: 5px;
+}
+
+.list-item{
+    color:gray;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-item span{
+    flex: 1;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    align-self: flex-end;
+}
