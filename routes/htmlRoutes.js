@@ -1,15 +1,14 @@
+const path = require("path");
+const express = require("express");
 
-var path = require("path");
+const router = express.Router();
 
-module.exports = function(app) {
-  // HTML GET Requests
+router.get("/notes", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/notes.html"));
+});
 
-  app.get("/notes", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/notes.html"));
-  });
+router.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
-  // If no matching route is found default to home
-  app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
-  });
-};
+module.exports = router;

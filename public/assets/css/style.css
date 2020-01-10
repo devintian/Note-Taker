@@ -22,11 +22,11 @@ nav{
 .list-item{
     color:gray;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.list-item span{
-    flex: 1;
+.list-item button{
+    align-self: flex-end;
 }
 
 .hero .container{

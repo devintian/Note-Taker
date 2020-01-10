@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Note Taker</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
@@ -19,8 +19,8 @@
             Take Notes With Express
           </h2>
           <h2 class="icons">
-            <i class="fas fa-save" id="saveButton"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fas fa-pen-nib" id="writeButton"></i>
+            <button id="saveButton"><i class="fas fa-save"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="writeButton"><i class="fas fa-pen-nib"></i></button>
           </h2>
         </div>
       </div>
@@ -31,13 +31,6 @@
         <div class="columns"id="notesArea">
           <div class="column is-one-thrid" id="notesSaved">
             <ul class="list is-hoverable" id="noteList">
-              <a class="list-item">
-                <span>You</span>
-                <button class="delete is-small" id="deleteNote"></button>
-              </a>
-              <a class="list-item">
-                You
-              </a>
             </ul>
           </div>
     
